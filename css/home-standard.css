@@ -1,6 +1,11 @@
 /*========================================
          HOME-STANDARD PAGE STYLE
 =========================================*/
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura.ttf") format("truetype");
+}
+
 .header-top {
   position: relative;
   text-align: center;
