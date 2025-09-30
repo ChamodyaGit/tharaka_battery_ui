@@ -207,7 +207,7 @@
             <i class="icofont-food-cart"></i>
             <span>Shop</span>
         </a>
-        <a href='cart.html' title='Wishlist'>
+        <a href='cart.html' title='Cart List'>
             <i class="fas fa-shopping-basket"></i>
             <span>cartlist</span>
             <sup>2+</sup>
@@ -228,11 +228,10 @@
         =======================================-->
     <section class="inner-section single-banner" style="background: url(images/newsletter.jpg) no-repeat center;">
         <div class="container">
-            <h2>wishlist</h2>
+            <h2>cartlist</h2>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href='index.html'>Home</a></li>
-                <li class="breadcrumb-item"><a href='shop-4column.html'>shop grid</a></li>
-                <li class="breadcrumb-item active" aria-current="page">wishlist</li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Cart</li>
             </ol>
         </div>
     </section>
@@ -244,55 +243,86 @@
     <!--=====================================
                     WISHLIST PART START
         =======================================-->
-    <section class="inner-section wishlist-part">
+    <section class="inner-section cart-part">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="table-scroll">
                         <table class="table-list">
                             <thead>
                                 <tr>
-                                    <th scope="col">Serial</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">description</th>
-                                    <th scope="col">status</th>
-                                    <th scope="col">shopping</th>
-                                    <th scope="col">action</th>
+                                    <th>Product</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="table-serial">
-                                        <h6>01</h6>
+                                    <td class="table-image"><img src="images/product/02.png" alt="product"></td>
+                                    <td>
+                                        <h6>Lucas Battery 12V 45Ah</h6>
                                     </td>
-                                    <td class="table-image"><img src="images/product/02.jpg" alt="product"></td>
-                                    <td class="table-name">
-                                        <h6>Lucas LU-12XL2.5L-C</h6>
+                                    <td>
+                                        <h6>LKR 14,000.00</h6>
                                     </td>
-                                    <td class="table-price">
-                                        <h6>LKR.15,000.00<small>/piece</small></h6>
+                                    <td>
+                                        <div class="product-action">
+                                            <button class="action-minus" title="Quantity Minus"><i
+                                                    class="icofont-minus"></i></button>
+                                            <input class="action-input" title="Quantity Number" type="text"
+                                                name="quantity" value="1">
+                                            <button class="action-plus" title="Quantity Plus"><i
+                                                    class="icofont-plus"></i></button>
+                                        </div>
                                     </td>
-                                    <td class="table-desc">
-                                        <p>Lucas PremiumMF batteries include up to...<a href='product-video.html'>read
-                                                more</a></p>
+                                    <td>
+                                        <h6>LKR 14,000.00</h6>
                                     </td>
-                                    <td class="table-status">
-                                        <h6 class="stock-in">stock in</h6>
+                                    <td><a class="trash" href="#"><i class="icofont-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-image"><img src="images/product/02.png" alt="product"></td>
+                                    <td>
+                                        <h6>Exide Battery 12V 65Ah</h6>
                                     </td>
-                                    <td class="table-shop">
-                                        <button class="product-add" title="Add to Cart">add to cart</button>
+                                    <td>
+                                        <h6>LKR 15,000.00</h6>
                                     </td>
-                                    <td class="table-action">
-                                        <a class="view" href="product-simple.html" title="Single Product View"><i
-                                                class="fas fa-eye"></i></a>
-                                        <a class="trash" href="#" title="Remove Wishlist"><i
-                                                class="icofont-trash"></i></a>
+                                    <td>
+                                        <div class="product-action">
+                                            <button class="action-minus" title="Quantity Minus"><i
+                                                    class="icofont-minus"></i></button>
+                                            <input class="action-input" title="Quantity Number" type="text"
+                                                name="quantity" value="1">
+                                            <button class="action-plus" title="Quantity Plus"><i
+                                                    class="icofont-plus"></i></button>
+                                        </div>
                                     </td>
+                                    <td>
+                                        <h6>LKR 15,000.00</h6>
+                                    </td>
+                                    <td><a class="trash" href="#"><i class="icofont-trash"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="col-lg-4">
+                    <div class="cart-summary">
+                        <h4>Cart Totals</h4>
+                        <ul>
+                            <li><span>Subtotal</span><span>LKR 29,000.00</span></li>
+                            <li><span>Delivery</span><span>Free</span></li>
+                            <li><span>Total</span><span>LKR 29,000.00</span></li>
+                        </ul>
+                        <a href="checkout.html" class="btn btn-inline">
+                            <i class="fas fa-credit-card"></i><span>Proceed to Checkout</span>
+                        </a>
                     </div>
                 </div>
             </div>
