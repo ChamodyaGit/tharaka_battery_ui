@@ -1211,7 +1211,6 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: none;
 }
 
 .product-action button i {
