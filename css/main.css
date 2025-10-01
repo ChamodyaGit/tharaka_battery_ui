@@ -3771,7 +3771,7 @@ tbody tr td:last-child {
 }
 
 .branch-card:hover::before {
-  background: rgba(17, 151, 68, 0.85);
+  background: rgba(170, 1, 9, 0.85);
 }
 
 .branch-card:hover .branch-overlay {
