@@ -611,11 +611,23 @@
 }
 
 /*udara*/
+.product-image{
+  width: 100% !important;
+}
 .product-image img{
   aspect-ratio: 4 / 3;
+  width: 100% !important;
   object-fit: cover;
 }
-.category-media img{
+.category-media img, .feature-image img{
   aspect-ratio: 4 / 3;
   object-fit: contain;
+}
+
+.product-name a{
+  display: -webkit-box;        /* Enables flexbox-like layout */
+  -webkit-box-orient: vertical; /* Vertical stacking of lines */
+  -webkit-line-clamp: 1;       /* Number of lines before truncating */
+  overflow: hidden;            /* Hides extra text */
+  text-overflow: ellipsis; 
 }
